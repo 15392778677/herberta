@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: herberta
+Version: 0.1.0
+Summary: A Python package for converting texts to embeddings using pretrained models.
+Home-page: https://github.com/15392778677/herberta
+Author: XiaoEn
+Author-email: 1958944515@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=1.9
+Requires-Dist: transformers>=4.0
+
+<!--
+ * @Date: 2024-12-04 16:54:16
+ * @LastEditors: yangyehan 1958944515@qq.com
+ * @LastEditTime: 2024-12-04 17:10:31
+ * @FilePath: /herberta/README.md
+ * @Description: 
+-->
+# Text Embedding Package
+
+A Python package for converting texts into embeddings using pretrained transformer models.
+
+## Installation
+
+```bash
+pip install herberta
+
+```python
+from herberta.embedding import TextToEmbedding
+
+# Initialize the embedding model
+embedder = TextToEmbedding("path/to/your/model")
+
+# Single text input
+embedding = embedder.get_embeddings("This is a sample text.")
+
+# Multiple text input
+texts = ["This is a sample text.", "Another example."]
+embeddings = embedder.get_embeddings(texts)
+```
+

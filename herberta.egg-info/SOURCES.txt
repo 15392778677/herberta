@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+herberta/__init__.py
+herberta/embedding.py
+herberta.egg-info/PKG-INFO
+herberta.egg-info/SOURCES.txt
+herberta.egg-info/dependency_links.txt
+herberta.egg-info/requires.txt
+herberta.egg-info/top_level.txt
