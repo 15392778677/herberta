@@ -15,6 +15,45 @@ Support for a wide range of downstream TCM tasks, e.g., classification tasks, la
 Model Address:https://huggingface.co/XiaoEnn/herberta
 
 
+
+## QuickStart
+
+### requirements
+"transformers_version": "4.45.1"
+```bash
+pip install herberta
+```
+
+#### Use Huggingface
+```python
+from transformers import AutoTokenizer, AutoModel
+
+# Replace "XiaoEnn/herberta" with the Hugging Face model repository name
+model_name = "XiaoEnn/herberta"
+
+# Load tokenizer and model
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name)
+
+# Input text
+text = "中医理论是我国传统文化的瑰宝。"
+
+# Tokenize and prepare input
+inputs = tokenizer(text, return_tensors="pt", truncation=True, padding="max_length", max_length=128)
+
+# Get the model's outputs
+with torch.no_grad():
+    outputs = model(**inputs)
+
+# Get the embedding (sentence-level average pooling)
+sentence_embedding = outputs.last_hidden_state.mean(dim=1)
+
+print("Embedding shape:", sentence_embedding.shape)
+print("Embedding vector:", sentence_embedding)
+```
+
+
+
 # Text Embedding Package
 
 A Python package for converting texts into embeddings using pretrained transformer models.
