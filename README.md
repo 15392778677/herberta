@@ -14,6 +14,32 @@ Support for a wide range of downstream TCM tasks, e.g., classification tasks, la
 
 Model Address:https://huggingface.co/XiaoEnn/herberta
 
+# Update Release!
+“Herberta has now received a major update. We have trained new pre-trained models on a larger dataset, with three versions: herberta_seq_512_V2, herberta_seq_128_V2, and herberta_V3_Modern. Their performance on downstream tasks is as follows:”
+
+## Downstream Task: TCM Pattern Classification
+
+### Task Definition
+Using **321 pattern descriptions** extracted from TCM internal medicine textbooks, we evaluated the classification performance on four models:
+
+1. **Herberta_seq_512_v2**: Pretrained on 700 ancient TCM books.
+2. **Herberta_seq_512_v3**: Pretrained on 48 modern TCM textbooks.
+3. **Herberta_seq_128_v2**: Pretrained on 700 ancient TCM books (128-length sequences).
+4. **Roberta**: Baseline model without TCM-specific pretraining.
+
+
+### Results
+
+| Model Name              | Eval Accuracy | Eval F1   | Eval Precision | Eval Recall |
+|--------------------------|---------------|-----------|----------------|-------------|
+| **Herberta_seq_512_v2** | **0.9454**    | **0.9293** | **0.9221**     | **0.9454**  |
+| **Herberta_seq_512_v3** | 0.8989        | 0.8704    | 0.8583         | 0.8989      |
+| **Herberta_seq_128_v2** | 0.8716        | 0.8443    | 0.8351         | 0.8716      |
+| **Roberta**             | 0.8743        | 0.8425    | 0.8311         | 0.8743      |
+
+![image](https://github.com/user-attachments/assets/6b6fd9e2-086d-4de7-b525-7b3199f14d2d)
+
+** The model labeled V3 was pre-trained on 48 modern Chinese medicine textbooks, while the models labeled V2 were all pre-trained on over 670 classical Chinese medicine texts, with herberta_seq_512 performing the best among them. **
 
 
 ## QuickStart
