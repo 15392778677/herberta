@@ -5,12 +5,9 @@
  * @FilePath: /herberta/README.md
  * @Description: 
 -->
-# introduction
+# 📚 introduction
 Herberta Pretrain model experimental research model developed by the Angelpro Team, focused on Development of a pre-training model for herbal medicine.Based on the chinese-roberta-wwm-ext-large model, we do the MLM task to complete the pre-training model on the data of 675 ancient books and 32 Chinese medicine textbooks, which we named herberta, where we take the front and back words of herb and Roberta and splice them together. We are committed to make a contribution to the TCM big modeling industry. We hope it can be used:
 
-Encoder for Herbal Formulas, Embedding Models
-Word Embedding Model for Chinese Medicine Domain Data
-Support for a wide range of downstream TCM tasks, e.g., classification tasks, labeling tasks, etc.
 
 **🌟 Key Features**
 
@@ -20,12 +17,17 @@ Support for a wide range of downstream TCM tasks, e.g., classification tasks, la
 
 ​	3.	**Support for TCM Tasks**: Enables various downstream tasks, such as classification, labeling, and more.
 
+<br>
 
 # jingfang-HerbalFamily:
 https://huggingface.co/collections/XiaoEnn/jingfang-herbalfamily-6756a48ea4b0a4a71a74c99f
 
-**🔥 Update: Major Release!**
-“Herberta has now received a major update. We have trained new pre-trained models on a larger dataset, with three versions: herberta_seq_512_V2, herberta_seq_128_V2, and herberta_V3_Modern. Their performance on downstream tasks is as follows:”
+<br>
+
+# 🔥 Update: Major Release!
+**Herberta has now received a major update. We have trained new pre-trained models on a larger dataset, with three versions: herberta_seq_512_V2, herberta_seq_128_V2, and herberta_V3_Modern. Their performance on downstream tasks is as follows:**
+
+<br>
 
 ## Downstream Task: TCM Pattern Classification
 
@@ -51,8 +53,9 @@ Using **321 pattern descriptions** extracted from TCM internal medicine textbook
 
 **The model labeled V3 was pre-trained on 48 modern Chinese medicine textbooks, while the models labeled V2 were all pre-trained on over 670 classical Chinese medicine texts, with herberta_seq_512 performing the best among them.**
 
+<br>
 
-## 🚀 QuickStart
+# 🚀 QuickStart
 
 ### requirements
 "transformers_version": "4.45.1"
@@ -88,9 +91,9 @@ print("Embedding shape:", sentence_embedding.shape)
 print("Embedding vector:", sentence_embedding)
 ```
 
+<br>
 
-
-# Text Embedding Package
+## 📦 Text Embedding Package
 
 A Python package for converting texts into embeddings using pretrained transformer models.
 
