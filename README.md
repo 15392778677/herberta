@@ -12,7 +12,8 @@ Encoder for Herbal Formulas, Embedding Models
 Word Embedding Model for Chinese Medicine Domain Data
 Support for a wide range of downstream TCM tasks, e.g., classification tasks, labeling tasks, etc.
 
-Model Address:https://huggingface.co/XiaoEnn/herberta
+# jingfang-HerbalFamily:
+https://huggingface.co/collections/XiaoEnn/jingfang-herbalfamily-6756a48ea4b0a4a71a74c99f
 
 # Update Release!
 “Herberta has now received a major update. We have trained new pre-trained models on a larger dataset, with three versions: herberta_seq_512_V2, herberta_seq_128_V2, and herberta_V3_Modern. Their performance on downstream tasks is as follows:”
