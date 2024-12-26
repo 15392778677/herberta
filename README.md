@@ -57,6 +57,9 @@ Using **321 pattern descriptions** extracted from TCM internal medicine textbook
 
 # 🚀 QuickStart
 
+### first of all
+Go huggingface(https://huggingface.co/collections/XiaoEnn/jingfang-herbalfamily-6756a48ea4b0a4a71a74c99f) and download the Model you choosed ,then go on!
+
 ### requirements
 "transformers_version": "4.45.1"
 ```bash
