@@ -40,7 +40,7 @@ Using **321 pattern descriptions** extracted from TCM internal medicine textbook
 
 ![image](https://github.com/user-attachments/assets/6b6fd9e2-086d-4de7-b525-7b3199f14d2d)
 
-** The model labeled V3 was pre-trained on 48 modern Chinese medicine textbooks, while the models labeled V2 were all pre-trained on over 670 classical Chinese medicine texts, with herberta_seq_512 performing the best among them. **
+**The model labeled V3 was pre-trained on 48 modern Chinese medicine textbooks, while the models labeled V2 were all pre-trained on over 670 classical Chinese medicine texts, with herberta_seq_512 performing the best among them.**
 
 
 ## QuickStart
